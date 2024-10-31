@@ -1,0 +1,18 @@
+name: First Workflow
+
+on:
+  - push
+
+jobs: 
+    first_job:
+        name: code-deploy
+        runs-on: ubuntu-latest
+        steps:
+            - name: Welcome Message
+              run: echo "My first GitHub Actions Job"
+
+            - name: List Files 
+              run: ls 
+
+            - name: Read file 
+              run: cat Dockerfile
