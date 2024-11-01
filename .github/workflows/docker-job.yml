@@ -13,7 +13,7 @@ jobs:
     - name: Docker Build 
       run: docker build -t docker.io/efotsowoe/resume-app:latest .
     
-    - name: list docker images
+    - name: List Docker Images
       run: docker images -a
 
     - name: Docker Login
